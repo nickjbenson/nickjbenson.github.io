@@ -1,10 +1,16 @@
 
+/* Generic */
+
 body {
-    background-color: #999eec;
+    background-image: url("static/corridor_vignette.png");
+    image-rendering: pixelated;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000000;
 }
 
 p, h1, h2, dt, dd, a, li {
-    font-family: 'Volkornn', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
@@ -12,18 +18,41 @@ p, dt, dd {
     font-size: 10pt;
 }
 
+.centered {
+    text-align: center;
+}
+
+
+/* Primary containers */
+
+div.container {
+    background-color: #fff5f9;
+    opacity: 0.9;
+    width: 520px;
+    border-radius: 2px;
+    /*border-color: #999999;
+    border: 1px solid #AAAAAA;*/
+    /*box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);*/
+    margin: auto;
+    margin-left: 7%;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h2.container_title {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 
 /* Titlecard */
 
-div.container {
-    border-radius: 2px;
-    border-color: #999999;
-    background-color: #FFFFFF;
-    width: 520px;
-    margin: auto;
-    margin-top: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+#titlecard {
+    margin-top: 40px;
+    border-top-left-radius: 5px; border-top-right-radius: 5px;
 }
 
 h1.titlecard_title {
@@ -55,6 +84,10 @@ p.titlecard_attribute {
     padding-left: 10px;
     padding-right: 10px;
 }
+.centeredfob {
+    display: table;
+    margin: auto;
+}
 
 h2.resume_link {
     margin-top: 40px;
@@ -65,13 +98,6 @@ h2.resume_link {
 
 
 /* Portfolio */
-
-h2.portfolio_title {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 dt.portfolio_item {
     padding-left: 40px;
@@ -92,14 +118,15 @@ div.overlay_container {
     left: 50%;
     width: 600px;
     height: auto;
+    max-height: 80%;
     margin: auto;
     background-color: #FFFFFF;
     border-radius: 4px;
     left: 0; right: 0;
     overflow: auto;
     border: 1px solid #999999;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-    padding-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
 
     top: 15%;
     opacity: 0;
@@ -119,18 +146,6 @@ div.overlay_container>img {
 div.overlay_container>* {
     padding-left: 40px;
     padding-right: 40px;
-}
-
-#thelittlethings_details:target {
-    top: 5%;
-    opacity: 1;
-    pointer-events: all;
-
-    -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -ms-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-    -0-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 #kami_details:target {
@@ -155,17 +170,69 @@ div.overlay_container>* {
     margin-top: 0px;
     text-align: center;
 }
+p.centered.kami_link {
+    font-size: 12pt;
+}
 #kami_details>ul {
     padding-left: 120px;
 }
 
+#thelittlethings_details:target {
+    top: 5%;
+    opacity: 1;
+    pointer-events: all;
 
-/* Generics */
-
-.centered {
-    text-align: center;
+    -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -0-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.centeredfob {
-    display: table;
-    margin: auto;
+
+#reverb_details:target {
+    top: 5%;
+    opacity: 1;
+    pointer-events: all;
+
+    -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -0-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+
+/* News */
+
+#news>p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.news_entrydate {
+    opacity: 0.4;
+    font-weight: 300;
+    font-size: 12pt;
+    margin-bottom: 5px;
+}
+.news_entry {
+    margin-top: 5px;
+
+}
+.news_signoff {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+#footer {
+    margin-bottom: 40px;
+}
+#footer>p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#change_the_world {
+    display: inline-block;
 }
