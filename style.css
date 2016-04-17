@@ -81,8 +81,8 @@ p.titlecard_attribute {
     display: inline-block;
     opacity: 0.5;
     transform: scaleY(0.2) scaleX(2.0);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .centeredfob {
     display: table;
@@ -93,6 +93,13 @@ h2.resume_link {
     margin-top: 40px;
     text-align: center;
     font-size: 18pt;
+    margin-bottom: 10px;
+}
+
+p.linkedin_sublink {
+    margin-top: 10px;
+    font-size: 9pt;
+    opacity: 0.8;
     margin-bottom: 10px;
 }
 
