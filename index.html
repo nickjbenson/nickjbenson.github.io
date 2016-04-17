@@ -8,41 +8,71 @@
     <link href='https://fonts.googleapis.com/css?family=Volkornn' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="titlecard">
+    <div id="titlecard" class="container">
         <h1 class="titlecard_title">Nicholas Benson</h1>
-        <p class="titlecard_subtitle">(that's what this page is--it's Nicholas Benson)</p>
+        <p class="titlecard_subtitle">(that's what this page is—it's Nicholas Benson)</p>
 
-        <p class="titlecard_attribute"><span class="subtitle_fob">•</span> TA, <a href="https://musictech.mit.edu/ims">Interactive Music Systems</a>, Spring 2016 <span class="subtitle_fob">•</span></p>
-        <p class="titlecard_attribute"><span class="subtitle_fob">•</span> Student contributor, <a href="https://groups.csail.mit.edu/genesis/">The Genesis System</a> <span class="subtitle_fob">•</span></p>
+        <p class="titlecard_attribute"><span class="fob">•</span> TA, <a href="https://musictech.mit.edu/ims" target="_blank">Interactive Music Systems</a>, Spring 2016 <span class="fob">•</span></p>
+        <p class="titlecard_attribute"><span class="fob">•</span> Student contributor, <a href="https://groups.csail.mit.edu/genesis/" target="_blank">The Genesis System</a> <span class="fob">•</span></p>
 
-        <h2 class="resume_link">Résumé - <a href="http://omono.me/resume/NJB_resume_041616.pdf" type="application/pdf">[pdf]</a></h2>
+        <h2 class="resume_link">Résumé - <a href="http://omono.me/resume/NJB_resume_041616.pdf" target="_blank" type="application/pdf">[pdf]</a></h2>
     </div>
-    <div class="portfolio">
+    <div id="portfolio" class="container">
         <h2 class="portfolio_title">Portfolio</h2>
-        <p class="portfolio_context">A sampling of electronic music, videos, and interactive systems I've made.</p>
-        <p class="portfolio_link">"Corridor" - [YouTube] (https://youtu.be/j6lk-DgHAU8)</p>
-        <p class="portfolio_link">"Kami" - Nick Benson, Ben Chan, Misha Jamy - [play] (requires uploading of things)</p>
-        <p class="portfolio_link">"Prismaglagl" - [YouTube] (https://youtu.be/cVcm9fdKT4c)</p>
-        <p class="portfolio_link">"Sonos Video Challenge 2014" - [YouTube] (https://youtu.be/KVQmHDEaXrc)</p>
-        <p class="portfolio_link">"The Little Things" - Ilana Habib, Royal Morris, Liz Rita, Nick Benson (Casting Director, Animator, Sound Designer) - [screenshot] (proj/thelittlethings/TheLittleThings_screenshot.png)</p>
-        <p class="portfolio_link">"Echo" - Royal Morris, CK Ong, Jan Rodriguez, Travis Wagner, Nick Benson (Level/Gameplay Designer) - [images]
-            -- design sketches
-            -- screenshots</p>
-        <p class="portfolio_link">"Aquatic Evolver" - Nick Benson (Producer, Artist, Sound Designer), Marcel Polanco, Carlo Biedenharn, Travis Wagner, Justin White, Allen Park, Rohan Mahajan, Jancarlo Perez, Jan Rodriguez, Skyler Seto, Pedro Cattori - [play] (requires Flash)
+        <dl class="portfolio_list">
+            <dt class="portfolio_item">"Corridor" - <a href="https://youtu.be/j6lk-DgHAU8" target="_blank">[YouTube]</a></dt>
+            <dd class="portfolio_desc">Audio, Fall 2016. Video, Spring 2016.</dd>
+            <dt class="portfolio_item">"Prismaglagl" - <a href="https://youtu.be/cVcm9fdKT4c" target="_blank">[YouTube]</a></dt>
+            <dd class="portfolio_desc">Audio, Fall 2016. Video, Spring 2016.</dd>
+            <dt class="portfolio_item">"Kami" - <a href="#kami_details">[play]</a></dt>
+            <dd class="portfolio_desc">Nick Benson, Ben Chan, Misha Jamy. Spring 2015.</dd>
+            <dt class="portfolio_item">"Sonos Video Challenge" - <a href="https://youtu.be/KVQmHDEaXrc" target="_blank">[YouTube]</a></dt>
+            <dd class="portfolio_desc">Spring 2014.</dd>
+            <dt class="portfolio_item">"The Little Things" - <a href="#thelittlethings_details">[details]</a></dt>
+            <dd class="portfolio_desc">Ilana Habib, Royal Morris, Liz Rita, Nick Benson (Casting, Art Coordinator, Sound Design). Spring 2014.</dd>
+            <dt class="portfolio_item">"Echo" - [images]
+                -- design sketches
+                -- screenshots</dt>
+            <dd class="portfolio_desc">Royal Morris, CK Ong, Jan Rodriguez, Travis Wagner, Nick Benson (Level & Gameplay Design). Spring 2014.</dd>
+            <dt class="portfolio_item">"Aquatic Evolver" - [play] (requires Flash)</dt>
+            <dd class="portfolio_desc">Nick Benson (Producer, Game Design, Art & Sound Design), Marcel Polanco, Carlo Biedenharn, Travis Wagner, Justin White, Allen Park, Rohan Mahajan, Jancarlo Perez, Jan Rodriguez, Skyler Seto, Pedro Cattori</dd>
+        </dl>
+        <div class="overlay_container" id="kami_details">
+            <h1>Kami</h1>
+            <p class="subtitle">There is music around you.</p>
+            <ul>
+                <li><b>LMB</b> - pull target creature.</li>
+                <li><b>RMB</b> - push target creature.</li>
+                <li><b>Headphones</b> - you should use them if you can.</li>
+            </ul>
+            <p class="centered"><a href="kami/index.html" target="_blank">[play (opens new tab)]</a></p>
+            <p class="subtitle">While the game loads, come on back and read the description!</p>
+            <p class="fob centeredfob">•</p>
+            <p>Kami is an musical stand-in-one-spot-and-wave-your-hands-around simulator for Oculus VR and Leap Motion.</p>
+            <p>Sadly, you cannot play Kami as a VR experience, because browser VR doesn't really exist yet, and ain't nobody got VR equipment lying around. Instead, you can play a WebGL port using the mouse to look, the left button to pull on critters, and the right button to push critters away.</p>
+            <p>Final project for 21M.359 Interactive Music Systems, Fall 2016. (Originally titled "Musicritters.")
+            <p><a href="#home">Close.</a></p>
+        </div>
+        <div class="overlay_container" id="thelittlethings_details">
+            <img src="thelittlethings/screenshot.png" alt="The Little Things" style="width:500px;height:365px;">
+            <p>The Little Things was a parody fighting game designed to bring attention to "micro-aggressions," or, those moments when one subjects another to the judgements of social, systemic bias, often without even realizing it, and usually pertaining to gender, race, or another social construction of identity.</p>
+            <p>Girl gamers get a lot of flak for their gender, but guy gamers don't realize when they're being <i>digglyboops</i>. So the Little Team (Ilana Habib, Royal Morris, Liz Rita, Nick Benson) aimed to make a fighting game that could have fun and subvert the usual gender <i>bullywhoozit</i> at the same time.</p>
+            <p>Final project for CMS.610: The Art, Science, and Business of Games. Game projects were developed into brief demos and supplementary material to pitch to a panel of industry veterans. Spring 2014.</p>
+            <a href="#home">Close.</a>
+        </div>
     </div>
-    <div class="news">
+    <div id="news" class="container">
         <h2 class="news_title">News</h2>
         <p class="news_entrydate">4/13/2016</p>
         <p class="news_entry">Have you heard of _Rust_ (href=https://www.rust-lang.org/)? I think it looks swell! I'm currently using it to build a synth and sequencer out of rust-portaudio, a raspberry pi, a midi keyboard, and speakers.</p>
         <p class="news_signoff">-Nick</p>
     </div>
-    <div class="about_me">
+    <div id="about_me" class="container">
         <h2 class=about_me_title>About Me</h2>
         <p class="about_me">I want to <i>change the world</i>, one interactive audiovisual system at a time.</p>
     </div>
     <div class="footer">
-        <p class="contactme">Contact me via "internet mail." (mailto:nickjbenson@gmail.com)</p>
-
+        <p class="contactme">Contact me via "<a href="mailto:nickjbenson@gmail.com">internet mail</a>." You can also find me on <a href="">LinkedIn</a>, <a href="">GitHub</a>, and <a href="">Bitbucket</a>.</p>
         <p class="subtle">Boy howdy, that's all there is!</p>
     </div>
 </body>
