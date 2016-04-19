@@ -9,7 +9,7 @@ body {
     background-color: #000000;
 }
 
-p, h1, h2, dt, dd, a, li {
+p, h1, h2, h3, dt, dd, a, li {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -118,6 +118,11 @@ dd.portfolio_desc {
     font-style: italic;
     font-size: 9pt;
     margin-bottom: 10px;
+}
+
+h3.portfolio_year_header {
+    margin-top: 30px;
+    padding-left: 40px;
 }
 
 div.overlay_container {
